@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	  <meta name="darkreader" content="disabled dark reader">
+	  <title>Window Objects and Properties</title>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="items">
+			<h1>The Window Object</h1>
+			<h2>The innerWidth, innerHeight, outerWidth, and outerHeight properties</h2>
+			<p id="content"></p>
+			<p id="browser"></p>
+			<p class="long-text"> The inner properties represent the viewport dimensions (in CSS pixels) and change with zoom level or browser window size. At 100% zoom, CSS pixel size = device pixel size.</p>
+			<p class="long-text"> The outer properties represent the browser window dimensions (in CSS pixels) and change with browser window size. They correspond to screen dimensions (resolution) when the browser window is maximised. They are unaffected by zoom level</p>
+		</div>
+		<div class="items">
+			<h1>The Windows Screen Object</h1>
+			<h2>The width and height Properties (Device Pixels or Screen Resolution)</h2>
+			<p id="screen"></p>
+		</div>
+	</div>
+
+	<script>
+		let w = window.innerWidth;
+		let h = window.innerHeight;
+		let w2 = window.outerWidth;
+		let h2 = window.outerHeight;
+		let width = screen.width;
+		let height = screen.height;
+		document.getElementById("content").innerHTML = "Inner Width: " + w + "px" + "<br>Inner Height: " + h + "px";
+		document.getElementById("browser").innerHTML = "Outer Width: " + w2 + "px" + "<br>Outer Height: " + h2 + "px";
+		document.getElementById("screen").innerHTML = "Screen Width: " + width + "px" + "<br>Screen Height: " + height + "px";
+	</script>   
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  /* Removed height: 100vh - was not necessary */
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; - removed - had no effect */
+    /* align-items: center; - removed - was simply copmpressing flex items horizontally */
+    background-color: black;
+    border: 1px solid rgb(0, 106, 255);
+    min-height: 100vh; /* Added to correct flex items flowing outside (below) container element upon zoom */
+    gap: 5px;  
+  }
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border: 2px solid rgb(37, 42, 175);
+    margin: 1px;
+    min width: 0; /* Prevent overflow */
+}
+
+p {
+    font-size: 20px;
+}
+
+p, h1, h2 {
+    color: rgb(0, 195, 255);
+    text-align: justify; 
+    padding: 10px;
+}
+
+.long-text {
+  width: 65vw;
+}
