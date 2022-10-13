@@ -5,4 +5,4 @@
 
 ### Reports the viewport, browser window and screen sizes
 
-### Click [here](https://htmlpreview.github.io/?https://github.com/magic-codeminer/screenalyzer/blob/main/index.html)
+### Click [here](https://htmlpreview.github.io/?https://github.com/codem1ner/screenalyzer/blob/main/index.html)
